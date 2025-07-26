@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>category | fragrance</title>
+     <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .x {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;            
+      position: sticky;
+      top: 120px;
+    }
+
+    .product-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      transition: 0.3s;
+      height: 100%;
+    }
+
+    .product-card:hover {
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .product-img {
+      height: 180px;
+      object-fit: contain;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    .product-title {
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+
+    .price {
+      color: #e91e63;
+      font-weight: bold;
+    }
+
+    .original-price {
+      text-decoration: line-through;
+      color: #888;
+      font-size: 0.85rem;
+    }
+
+    .rating {
+      color: #ffc107;
+      font-size: 0.85rem;
+    }
+
+    .wishlist-icon {
+      color: #ff4081;
+      float: right;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .filter-sidebar {
+        position: static;
+        top: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="container-fluid mt-4">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-md-3">
+        <div class="x">
+          <h5>Filters</h5>
+          <hr>
+          <div>
+            <strong>Price</strong>
+            <div><input type="checkbox"> Under ₹500</div>
+            <div><input type="checkbox"> ₹500 - ₹1000</div>
+            <div><input type="checkbox"> Above ₹1000</div>
+          </div>
+          <hr>
+          <div>
+            <strong>Rating</strong>
+            <div><input type="checkbox"> 4★ & above</div>
+            <div><input type="checkbox"> 3★ & above</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="col-md-9">
+        <div class="row g-3">
+          <!-- Product Card -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/5/3/5321eb6VICTO00000840_1.jpg" alt="Product" class="product-img">
+              <div class="product-title">Victoria's Secret Bare Vanilla Fragrance Mist For Her (250ml)</div>
+              <div class="rating">★★★★☆ (120)</div>
+              <div class="price">₹1619 <span class="original-price">₹2699</span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+
+          <!-- Repeat product cards -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/0/4/0456bdaSOLDE00000044_Image1.jpg" alt="Product" class="product-img">
+              <div class="product-title">Sol de Janeiro Cheirosa 62 Perfume Mist with Vanilla & Salted Caramel(90ml)</div>
+              <div class="rating">★★★★★ (350)</div>
+              <div class="price">₹2600 <span class="original-price"></span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+<div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/3/5/355b63aYVESS00000010_1.jpg" alt="Product" class="product-img">
+              <div class="product-title">Yves Saint Laurent Libre Eau De Parfum Intense With Lavender And Orange Blossom(90ml)</div>
+              <div class="rating">★★★★★ (350)</div>
+              <div class="price">₹10620 <span class="original-price"></span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/b/9/b9676e2VICTO00000935.jpg" alt="Product" class="product-img">
+              <div class="product-title">Victoria's Secret Tease Sugar Fleur EAU De Parfum(100ml)</div>
+              <div class="rating">★★★★★ (450)</div>
+              <div class="price">₹6299 <span class="original-price">₹8999</span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/d/b/db992ab3386460025485.jpg" alt="Product" class="product-img">
+              <div class="product-title">Jimmy Choo Eau De Parfum(60ml)</div>
+              <div class="rating">★★★★★ (350)</div>
+              <div class="price">₹6600<span class="original-price"></span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/1/0/1099572BATHB00001308_2311_1.jpg" alt="Product" class="product-img">
+              <div class="product-title">Bath & Body Works In The Stars Fine Fragrance Mist For Her(236ml)</div>
+              <div class="rating">★★★★★ (350)</div>
+              <div class="price">₹899<span class="original-price">₹2299</span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/4/c/4c6e65731655513034_1.jpg" alt="Product" class="product-img">
+              <div class="product-title">Marc Jacobs Daisy Eau De Toilette Spray(100ml)</div>
+              <div class="rating">★★★★★ (350)</div>
+              <div class="price">₹7380 <span class="original-price">₹8200</span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/b/4/b4a2395PRADA00000067_1.jpg" alt="Product" class="product-img">
+              <div class="product-title">PRADA Paradoxe Intense EAU De Parfum(90ml)</div>
+              <div class="rating">★★★★★ (350)</div>
+              <div class="price">₹12155<span class="original-price"></span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/d/b/db992ab3614227693920.jpg" alt="Product" class="product-img">
+              <div class="product-title">Burberry Her Eau De Parfum(50ml)</div>
+              <div class="rating">★★★★★ (350)</div>
+              <div class="price">₹6525<span class="original-price"></span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+          <!-- Add more cards as needed -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

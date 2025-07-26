@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GK – Beauty & Wellness Destination</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <style>
+        header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+         body {
+      margin: 0;
+      font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+        .first a{
+            font-size:19px; 
+            color:black;
+        }
+    .z {
+  background-color: #FAF9F6;
+  padding: 15px 30px;
+  height:60px;
+    }
+
+    .nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+    }
+
+    .logo img {
+  height: 75px;
+  width:75px;
+    }
+
+   .search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px 15px 10px 40px; /* Left padding to make space for icon */
+  border-radius: 25px;
+  border: 2px solid #000;
+  font-size: 16px;
+}
+
+.search-bar i {
+  position: absolute;
+  left: 15px;
+  color: #333;
+  font-size: 16px;
+}
+    .nav-links {
+    display: flex;
+    gap: 24px;
+    }
+    .nav-links a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    font-size: 20px;
+    }
+    .nav-links a:hover{
+    color:#5A3E36;
+    }
+    .x{ 
+        background-color:white; 
+        height: 80px;
+        width: auto;
+    }
+    .x a:hover{
+        color:black;
+    }
+    .y{
+        background-color:#FDEEEB;
+        color:#5A3E36;
+        margin-top: 250px; /* Adjust based on the height of your fixed header */
+        text-align: center;
+        font-size: 24px;
+    }
+    table{
+        font-weight: bold;
+        color:#5A3E36;
+    }
+    table tr td a{
+        font-size: 22px;
+        color:#5A3E36;
+    }
+    hr{
+        background-color:rgb(255, 255, 255);
+        width:auto;
+        height:1px;
+    }
+    a {color: rgb(11, 10, 10);
+    }
+    img{
+        height:80px;
+        width:80px;
+        border: 10px;
+    }
+    .slider{
+        background-color:black;
+        height:150px;
+        width:auto;
+        border-radius: 12px;
+        font-size: 38px;
+        color:white;
+    }
+    .top-marquee{
+        background-color:black;
+        height:50px;
+        width:auto;
+        font-size: 18px;
+        color:white;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color:white;
+        min-width: 180px;
+        z-index: 1;
+        border: 1px solid #ccc;
+        box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .dropdown-content a {
+        display: block;
+        padding: 10px 20px;
+        font-size: 18px;
+        color: #5A3E36;
+        text-decoration: none;
+    }
+     .dropdown-content a:hover {
+        background-color: #FDEEEB;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .spotlight {
+        background-color:white;
+        height:auto;
+        width:auto;
+        color:#5A3E36;
+        text-align:center;
+        
+    }
+    .spotlight h1{
+        font-size:45px;
+        weight:bold;
+    }
+    .spotlight img{
+        height:300px;
+        width:350px;
+    }
+    .bestseller {
+        background-color:white;
+        height:auto;
+        width:auto;
+        color:#5A3E36;
+        text-align:center;
+    }
+    .bestseller h1{
+        font-size:45px;
+    }
+    .bestseller img{
+        height:300px;
+        width:300px;
+    }
+    .bestseller p{
+        font-size:14px;
+        color:black;
+        text-align:center;
+    }
+    .searchbar{
+        height:200;
+        width:3000;
+    }
+    .HOT-RIGHT-NOW{
+        background-color:white;
+        height:auto;
+        width:auto;
+    }
+    .HOT-RIGHT-NOW h1{
+        font-size:45px;
+        text-align:center;
+        color:#5A3E36;
+    } 
+    .HOT-RIGHT-NOW img{
+        height:300px;
+        width:300px;
+    }
+    .HOT-RIGHT-NOW p{
+        font-size:18px;
+        color:black;
+        text-align:center;
+    }
+    .end-details{
+        background-color:white;
+        font-size:18px;
+        color:#5A3E36;
+        text-align:center;
+    }
+    .end-details h1{
+        color:#5A3E36;
+        text-align:center;
+        font-size:45px;
+    }
+    .end-details p{
+        color:#5A3E36;
+        text-align:center;
+        font-size:20px;
+    }
+    .end-details table th{
+        color:black;
+        font-size:25px;
+    }
+    .end-details td {
+        color:#5A3E36;
+        text-align: left;
+    }
+    .end-details table {
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <header>
+    <nav class="top-marquee">
+    <br>
+    <marquee scrollamount="50"> SALE ! SALE ! SALE ! SALE ! SALE ! SALE ! SALE ! SALE ! SALE ! SALE ! SALE ! SALE ! </marquee>
+</nav>
+    <nav class="z">
+  <div class="nav-container">
+    
+    <!-- Logo (Left) -->
+    <div class="logo">
+      <img src="C:\Users\Gursimar\OneDrive\Desktop\mylogo.png">
+    </div>
+
+    <!-- Search Bar (Center) -->
+    <div class="search-bar">
+        <i class="fas fa-search"></i>
+      <input type="text" placeholder="Search for products, brands and more..." />
+    </div>
+
+    <!-- Nav Links (Right) -->
+    <div class="nav-links">
+      <a href="scanapp.html">GETAPP</a>
+      <a href="storeEvent.html">STORE&EVENT</a>
+      <a href="help.html">HELP</a>
+      <a href="loginpage.html">SIGNUP/LOGIN</a>
+    </div>
+
+  </div>
+</nav>
+    
+    <nav class="x">
+<table cellspacing="30" align="center"> 
+<tr><td>
+    <nav class="dropdown">
+     <a href="#">CATEGORY</a>
+     <nav class="dropdown-content">
+        <a href="C:\Users\Gursimar\OneDrive\Desktop\NEW HTML\makeup.html">Makeup</a>
+            <a href="C:\Users\Gursimar\OneDrive\Desktop\NEW HTML\skin.html">Skin</a>
+            <a href="C:\Users\Gursimar\OneDrive\Desktop\NEW HTML\body.html">Body</a>
+            <a href="C:\Users\Gursimar\OneDrive\Desktop\NEW HTML\hair.html">Hair</a>
+            <a href="C:\Users\Gursimar\OneDrive\Desktop\NEW HTML\appliances.html">Appliances</a>
+            <a href="C:\Users\Gursimar\OneDrive\Desktop\NEW HTML\wellness.html">Health & Wellness</a>
+            <a href="C:\Users\Gursimar\OneDrive\Desktop\NEW HTML\fragrance.html">Fragrances</a>
+     </nav>
+     </nav>
+    </td>
+    <td>
+        <nav class="dropdown">
+
+        <a href="#">BRANDS</a>
+     <nav class="dropdown-content">
+         <a href="#">charlot tilbury</a>
+            <a href="#">dior</a>
+            <a href="#">rare beauty</a>
+            <a href="#">chanel</a>
+            <a href="#">huda beauty</a>
+            <a href="#">nars</a>
+            <a href="#">too faced</a>
+        </nav>
+        </nav>
+    </td>
+    <td><a href="#"> LUXE </a></td>
+    <td> <a href="#">FASHION ADVICE </a></td> 
+     <td>
+        <!-- 🛒 CART ICON -->
+        <a href="#" class="cart-icon" title="Cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+      </td>
+      <td>
+        <a href="#" class="wishlist-icon"><i class="far fa-heart"></i></a>
+      </td>
+</tr>
+</table>
+</nav>
+</header>
+<nav class="y">
+    <h1 style="text-align:center;font-size:44px;">GLOW UP STARTS HERE!!</style> </h1>
+    <p style="text-align:center;font-size:30px;"> DISCOVER TRENDING MAKEUP , SKINCARE AND BODYCARE <br> SHOP YOUR FAVROUIT BEAUTY MUST-HAVE NOW!! </style></p>
+<br>
+</nav>
+<nav class="spotlight">
+    <br>
+    <h1 >SPOTLIGHT ON </h1>
+    <table>
+        <tr>
+            <td>
+            <a href="https://www.bing.com/ck/a?!&&p=8ee44b755faf0e473846c87d12ec3e008a41b384e7098fcc92d2ed0a24fd275cJmltdHM9MTc1Mjg4MzIwMA&ptn=3&ver=2&hsh=4&fclid=28184768-1bc7-6e5c-286b-539d1a356f57&psq=beauty+by+joseon&u=a1aHR0cHM6Ly9iZWF1dHlvZmpvc2Vvbi5jb20v&ntb=1">
+            <img src="https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/company/1/applications/62d53777f5ad942d3e505f77/theme/pictures/free/resize-w:800/theme-image-1752842539801.jpeg">
+            </a>
+            </td>
+            <td>
+                <a href="https://www.bing.com/ck/a?!&&p=6c12d76109172df480084e4b073ca8e9a95a669d4732db785348f9da46e2441bJmltdHM9MTc1Mjg4MzIwMA&ptn=3&ver=2&hsh=4&fclid=28184768-1bc7-6e5c-286b-539d1a356f57&psq=cosrx&u=a1aHR0cHM6Ly93d3cuY29zcnguY29tLw&ntb=1">
+                    <img src="https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/company/1/applications/62d53777f5ad942d3e505f77/theme/pictures/free/resize-w:800/theme-image-1752843141032.jpeg">
+                </a>
+            </td>
+            <td>
+                <a href="https://www.bing.com/ck/a?!&&p=f5537c8b43c89bfcc3dd43220d6b32064efa5ddc8a5a3f601bbaa44ac20546b1JmltdHM9MTc1Mjg4MzIwMA&ptn=3&ver=2&hsh=4&fclid=28184768-1bc7-6e5c-286b-539d1a356f57&psq=laneige&u=a1aHR0cHM6Ly93d3cubGFuZWlnZS5jb20vaW50L2VuL2luZGV4Lmh0bWw&ntb=1">
+                <img src="https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/company/1/applications/62d53777f5ad942d3e505f77/theme/pictures/free/resize-w:800/theme-image-1752843433021.jpeg">
+            </a>
+        </td>
+            <td>
+                <a href="https://www.bing.com/ck/a?!&&p=0fcff1f9396775213ec3cbb8874373b32b74b90f3356d91722f724efe4a46774JmltdHM9MTc1Mjg4MzIwMA&ptn=3&ver=2&hsh=4&fclid=28184768-1bc7-6e5c-286b-539d1a356f57&psq=tirtir&u=a1aHR0cHM6Ly90aXJ0aXIuZ2xvYmFsLw&ntb=1">
+                <img src="https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/company/1/applications/62d53777f5ad942d3e505f77/theme/pictures/free/resize-w:800/theme-image-1752842536468.jpeg">
+            </a>
+        </td>
+        </tr>
+    </table>
+    <br>
+    <br>
+</nav>
+<nav class="bestseller">
+    <br>
+    <h1 >BESTSELLERS ITEMS </h1>
+    <table cellspacing="40">
+        <tr>
+            <td>
+                <a href="https://www.tirabeauty.com/product/too-faced-cloud-crush-blush---watermelon-rain--48g-oei7tacutw">
+                <img src="https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/resize-w:494/1084748/wyC8rHXeL-1084748_1.jpg">
+                </a>
+                <p>Too Faced Cloud Crush Blush <br>- Watermelon rain <br>(4.8g)</p>
+                </td>
+                <td>
+                    <a href="https://www.tirabeauty.com/product/the-face-shop-pomegranate-and-collagen-volume-lifting-cream-100ml-56joo0og3ah">
+                        <img src="https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/resize-w:1080/1140046/qN_2YYYKkD-1140046_1.jpg">
+                        </a>
+                        <p> The Face Shop Pomegranate & <br>Collagen Volume Lifting Cream <br>- Day & Night Korean Moisturizer (50ml)</p>
+                        </td>
+                <td>
+                    <a href="https://www.tirabeauty.com/product/skin1004-madagascar-centella-tone-brightening-capsule-ampoule-100ml-7591102">
+                        <img src="https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/resize-w:494/1133711/QV69rAH_ZRQ-1133711_1.jpg">
+                        </a>
+                        <p> SKIN1004 Madagascar Centella<br> Tone Brightening Capsule Ampoule <br>(100ml)</p>
+                    </td>
+            <td>
+                <a href="https://www.tirabeauty.com/product/benefit-cosmetics-the-porefessional-foundation-22n-outstanding-30-ml-7682814">
+                    <img src="https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/resize-w:494/1176613/WeReHji2N5-1176613_1.jpg">
+                    </a>
+                    <p> Benefit Cosmetics The POREfessional <br>Foundation with Niacinamide<br> - 22N Outstanding (30ml)</p>
+                    </td>
+                </tr>
+        </table>
+</nav>
+<nav class="HOT-RIGHT-NOW">
+    <br>
+    <h1>HOT-RIGHT-NOW </h1>
+    <table cellspacing="40">
+        <tr>
+            <td>
+                <a href="#">
+                    <img src="https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/company/1/applications/62d53777f5ad942d3e505f77/theme/pictures/free/resize-w:800/theme-image-1750739083313.jpeg">
+                    </a>
+                    <p><b>Insta Made Me Buy</b><br> IG-approved beauty essentials that<br> are too good to scroll past</p>
+            </td>
+            <td>
+                <a href="#">
+                    <img src="https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/company/1/applications/62d53777f5ad942d3e505f77/theme/pictures/free/resize-w:800/theme-image-1750739175153.jpeg">
+                    </a>
+                    <p><b>Frizz-Fighting Favourites</b><br>Frizz-control formulas that will<br> humidity-proof your hair</p>
+            </td>
+            <td>
+                <a href="#">
+                    <img src="https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/company/1/applications/62d53777f5ad942d3e505f77/theme/pictures/free/resize-w:800/theme-image-1750739238257.jpeg">
+                </a>
+                <p><b>Guava Girl Makeup</b><br>Pink, glossy and totally sunkissed<br>—it’s guava beauty szn</p>
+            </td>
+            <td>
+                <a href="#">
+                    <img src="https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/company/1/applications/62d53777f5ad942d3e505f77/theme/pictures/free/resize-w:800/theme-image-1750739327036.jpeg">
+                </a>
+                <p><b>Scalp Detox</b><br>A weekly scalp detox ritual starts with <br>these clarifying picks</p>
+            </td>
+        </tr>
+    </table>
+    </nav>
+    <nav class="end-details">
+        <br>
+        <h1> BE THE FIRST TO HEAR ABOUT ALL THINGS BELLE FIORI </h1>
+        <P> STAY CONNECTED FOR EXCLUSIVE OFFERS AND LATEST UPDATES , DELIEVERED STRIGHT TO YOUR INBOX </P>
+        <table cellspacing="40" align="center">
+            <tr>
+                <th>
+                    GK
+                </th>
+                <th> ABOUT US</th>
+                <th>
+                    CUSTOMER CARE 
+                </th>
+                <th>
+                    CATEGORY
+                </th>
+                <th>
+                    CONTACT US
+                </th>
+            </tr>
+            <tr>
+                <td> For every day, for every mood, for every you </td>
+                <td> who we are </td>
+                <td>help center</td>
+                <td> makeup</td>
+                <td style="text-align: left;">call:011-234-2345</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td> for you </td>
+                <td> FAQs </td>
+                <td> skin </td>
+                <td style="text-align: left;"> whatsapp: 7782318764</td>
+            </tr>
+            <tr>
+                <td> </td>
+                <td> offers </td>
+                <td> </td>
+                <td> hair </td>
+                <td style="text-align: left;"> email: help@bellefiori.com </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td> Fragrances</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>mini</td>
+                <td></td>
+            </tr>
+             <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>wellness</td>
+                <td></td>
+            </tr>
+             <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>gifts</td>
+                <td></td>
+            </tr>
+        </table>
+    </nav>
+</body>
+</html>

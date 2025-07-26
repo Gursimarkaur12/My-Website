@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>category | appliances</title>
+     <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .x {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      position: sticky;
+      top: 120px;
+    }
+
+    .product-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      transition: 0.3s;
+      height: 100%;
+    }
+
+    .product-card:hover {
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .product-img {
+      height: 180px;
+      object-fit: contain;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    .product-title {
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+
+    .price {
+      color: #e91e63;
+      font-weight: bold;
+    }
+
+    .original-price {
+      text-decoration: line-through;
+      color: #888;
+      font-size: 0.85rem;
+    }
+
+    .rating {
+      color: #ffc107;
+      font-size: 0.85rem;
+    }
+
+    .wishlist-icon {
+      color: #ff4081;
+      float: right;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .filter-sidebar {
+        position: static;
+        top: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="container-fluid mt-4">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-md-3">
+        <div class="x">
+          <h5>Filters</h5>
+          <hr>
+          <div>
+            <strong>Price</strong>
+            <div><input type="checkbox"> Under ₹500</div>
+            <div><input type="checkbox"> ₹500 - ₹1000</div>
+            <div><input type="checkbox"> Above ₹1000</div>
+          </div>
+          <hr>
+          <div>
+            <strong>Rating</strong>
+            <div><input type="checkbox"> 4★ & above</div>
+            <div><input type="checkbox"> 3★ & above</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="col-md-9">
+        <div class="row g-3">
+          <!-- Product Card -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/2/3/230d781DYSON00000031_1.jpg" alt="Product" class="product-img">
+              <div class="product-title">Dyson Corrale Hair Straightener - Bright Copper (1 Pcs)</div>
+              <div class="rating">★★★★☆ (120)</div>
+              <div class="price">₹29900 <span class="original-price">₹43900</span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+
+          <!-- Repeat product cards -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/8/a/8ac15cb5025155103470_1.png" alt="Product" class="product-img">
+              <div class="product-title">Dyson Supersonic Hair Dryer - Prussian Blue & Rich Copper (330 g)</div>
+              <div class="rating">★★★★★ (350)</div>
+              <div class="price">₹29900 <span class="original-price">₹36900</span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+<div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/6/c/6c8f65bALANT00000061_2.jpg" alt="Product" class="product-img">
+              <div class="product-title">Alan Truman No More Split Ends - Automatic Split End Trimmer(1 pieces)</div>
+              <div class="rating">★★★★★ (350)</div>
+              <div class="price">₹5999<span class="original-price"></span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/0/4/045b69b712383469274_0001.jpg" alt="Product" class="product-img">
+              <div class="product-title">Alan Truman The Blow Brush - Pastel Pink</div>
+              <div class="rating">★★★★★ (450)</div>
+              <div class="price">₹3999 <span class="original-price"></span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/resize-w:494/1160963/VspFU8kZL-1160963_1.jpeg" alt="Product" class="product-img">
+              <div class="product-title">Protouch Airshot All In 1 Hair Multi Styler For Curl Smooth Dry Blow & Volume</div>
+              <div class="rating">★★★★★ (350)</div>
+              <div class="price">₹17600<span class="original-price"></span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/resize-w:494/1171851/b7fHNr5udw-1171851_1.jpg" alt="Product" class="product-img">
+              <div class="product-title">Winston Flexy 8-In-1 Professional Hot Air Styler & Hair Dryer Brush - Pink</div>
+              <div class="rating">★★★★★ (350)</div>
+              <div class="price">₹18999 <span class="original-price"></span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/resize-w:1080/1171840/EJfd5fulsH-1171840_1.jpg" alt="Product" class="product-img">
+              <div class="product-title">Winston Hair Curler Tong with Adjustable Heat Setting - Grey</div>
+              <div class="rating">★★★★★ (350)</div>
+              <div class="price">₹1743 <span class="original-price">₹2490</span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/resize-w:494/1131129/bC7huZNelAW-1131129_1.jpg" alt="Product" class="product-img">
+              <div class="product-title">Philips BHH730/00 Hair Straightener Brush With Silk Protect Technology</div>
+              <div class="rating">★★★★★ (350)</div>
+              <div class="price">₹2956<span class="original-price">₹3659</span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/resize-w:494/1023270/agjnJycEV4-1023270_1.jpg" alt="Product" class="product-img">
+              <div class="product-title">Vega Pro Touch 1800-2000W Professional Hair Dryer for Men & Women with 2 Nozzles (VHDP-02) (549 g)</div>
+              <div class="rating">★★★★★ (350)</div>
+              <div class="price">₹2219<span class="original-price">₹3999</span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+          <!-- Add more cards as needed -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

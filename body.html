@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>category | body</title>
+     <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .x {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;            
+      position: sticky;
+      top: 120px;
+    }
+
+    .product-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      transition: 0.7s;
+      
+    }
+
+    .product-card:hover {
+      box-shadow:  30px 30px rgba(0,0,0,0.1);
+      width: 300px;
+      height: 300px;
+    }
+
+    .product-img {
+      height: 180px;
+      object-fit: contain;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    .product-title {
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+
+    .price {
+      color: #e91e63;
+      font-weight: bold;
+    }
+
+    .original-price {
+      text-decoration: line-through;
+      color: #888;
+      font-size: 0.85rem;
+    }
+
+    .rating {
+      color: #ffc107;
+      font-size: 0.85rem;
+    }
+
+    .wishlist-icon {
+      color: #ff4081;
+      float: right;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .filter-sidebar {
+        position: static;
+        top: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="container-fluid mt-4">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-md-3">
+        <div class="x">
+          <h5>Filters</h5>
+          <hr>
+          <div>
+            <strong>Price</strong>
+            <div><input type="checkbox"> Under ₹500</div>
+            <div><input type="checkbox"> ₹500 - ₹1000</div>
+            <div><input type="checkbox"> Above ₹1000</div>
+          </div>
+          <hr>
+          <div>
+            <strong>Rating</strong>
+            <div><input type="checkbox"> 4★ & above</div>
+            <div><input type="checkbox"> 3★ & above</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="col-md-9">
+        <div class="row g-3">
+          <!-- Product Card -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/resize-w:494/1043261/NdjQ8R5n7-1043261-1.jpg" alt="Product" class="product-img">
+              <div class="product-title">L'occitane Almond Shower Oil (250ml)</div>
+              <div class="rating">★★★★☆ (120)</div>
+              <div class="price">₹2400 <span class="original-price"></span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+
+          <!-- Repeat product cards -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/resize-w:494/l-occitane/1043275/0/sLMI5KXADD-zsJnedDPyE-1043275_1.jpg" alt="Product" class="product-img">
+              <div class="product-title">L'occitane Shea Butter Ultra Rich Shower Cream - (250ml)</div>
+              <div class="rating">★★★★★ (350)</div>
+              <div class="price">₹2150 <span class="original-price"></span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+<div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/resize-w:494/1103818/HLWoXVR1OE-1103818_1.jpg" alt="Product" class="product-img">
+              <div class="product-title">The Body Shop British Rose Body Yogurt (200ml)</div>
+              <div class="rating">★★★★★ (350)</div>
+              <div class="price">₹1095 <span class="original-price"></span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://cdn.prod.website-files.com/61c44817190504d47e91cbc4/680f4c14831e97d7f7891841_AgEVzMHqsWt-1134803-1.avif" alt="Product" class="product-img">
+              <div class="product-title">Treaclemoon The Raspberry Kiss Shower Gel (500 ml)</div>
+              <div class="rating">★★★★★ (450)</div>
+              <div class="price">₹540 <span class="original-price"></span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://cdn.prod.website-files.com/61c44817190504d47e91cbc4/67fa579a4d1466d74064fa2c_GClVvjVsUs-1145534_1.avif" alt="Product" class="product-img">
+              <div class="product-title">Tree Hut Shea Sugar Scrub Coco Colada (510 g)</div>
+              <div class="rating">★★★★★ (350)</div>
+              <div class="price">₹1799<span class="original-price"></span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://cdn.prod.website-files.com/61c44817190504d47e91cbc4/680f4c4fe3149a8fed487bc3_G5qBqhjHH-1156230_1.avif" alt="Product" class="product-img">
+              <div class="product-title">OUAI Body Creme Melrose Place (212 g)</div>
+              <div class="rating">★★★★★ (350)</div>
+              <div class="price">₹4227<span class="original-price"></span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://cdn.prod.website-files.com/61c44817190504d47e91cbc4/679b337a349a0a199c264a68_Thr%20ordinary.png" alt="Product" class="product-img">
+              <div class="product-title">The Ordinary Salicylic Acid 0.5% Body Serum (240 ml)</div>
+              <div class="rating">★★★★★ (350)</div>
+              <div class="price">₹1500 <span class="original-price"></span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://cdn.prod.website-files.com/61c44817190504d47e91cbc4/6874d0df6caffd9e7499b48e_dLAdxMsg2-3253581514177_1.jpeg" alt="Product" class="product-img">
+              <div class="product-title">L'occitane Almond Supple Skin Oil (15 ml)</div>
+              <div class="rating">★★★★★ (350)</div>
+              <div class="price">₹850<span class="original-price"></span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/resize-w:494/1103810/wM37qF2Wa-1103810_1.jpg" alt="Product" class="product-img">
+              <div class="product-title">The Body Shop British Rose Shower Gel (250ml)</div>
+              <div class="rating">★★★★★ (350)</div>
+              <div class="price">₹395 <span class="original-price"></span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+          <!-- Add more cards as needed -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

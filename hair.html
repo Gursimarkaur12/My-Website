@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>category|makeup</title>
+     <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .x {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      position: sticky;
+      top: 120px;
+    }
+
+    .product-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      transition: 0.3s;
+      height: 100%;
+    }
+
+    .product-card:hover {
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .product-img {
+      height: 180px;
+      object-fit: contain;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    .product-title {
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+
+    .price {
+      color: #e91e63;
+      font-weight: bold;
+    }
+
+    .original-price {
+      text-decoration: line-through;
+      color: #888;
+      font-size: 0.85rem;
+    }
+
+    .rating {
+      color: #ffc107;
+      font-size: 0.85rem;
+    }
+
+    .wishlist-icon {
+      color: #ff4081;
+      float: right;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .filter-sidebar {
+        position: static;
+        top: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="container-fluid mt-4">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-md-3">
+        <div class="x">
+          <h5>Filters</h5>
+          <hr>
+          <div>
+            <strong>Price</strong>
+            <div><input type="checkbox"> Under ₹500</div>
+            <div><input type="checkbox"> ₹500 - ₹1000</div>
+            <div><input type="checkbox"> Above ₹1000</div>
+          </div>
+          <hr>
+          <div>
+            <strong>Rating</strong>
+            <div><input type="checkbox"> 4★ & above</div>
+            <div><input type="checkbox"> 3★ & above</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="col-md-9">
+        <div class="row g-3">
+          <!-- Product Card -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/resize-w:494/1040085/C4S1W2Ju5E-1040085_1.jpg" alt="Product" class="product-img">
+              <div class="product-title">Olaplex No.6 Bond Smoother (100g)</div>
+              <div class="rating">★★★★☆ (120)</div>
+              <div class="price">₹2880 <span class="original-price">₹3220</span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+
+          <!-- Repeat product cards -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/resize-w:494/1102783/BrV-dwTqGl-815401010653_1.jpg" alt="Product" class="product-img">
+              <div class="product-title">GK Hair Taming System Argan Serum (50ml)</div>
+              <div class="rating">★★★★★ (350)</div>
+              <div class="price">₹2880 <span class="original-price">₹3200</span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+<div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/resize-w:1080/1143681/W-ad5ERfD-1143681-1.jpg" alt="Product" class="product-img">
+              <div class="product-title">Treecell Collagen Boost Scalp Pack (200 ml)</div>
+              <div class="rating">★★★★★ (350)</div>
+              <div class="price">₹1350<span class="original-price"></span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/resize-w:494/1143678/LEMrIkPU-4-1143678-1.jpg" alt="Product" class="product-img">
+              <div class="product-title">Treecell Day Collagen Shampoo Morning of Resort (360 ml)</div>
+              <div class="rating">★★★★★ (450)</div>
+              <div class="price">₹1230 <span class="original-price"></span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/resize-w:494/1102779/YdJgslZbD-815401013326_1.jpg" alt="Product" class="product-img">
+              <div class="product-title">GK Hair Moisturizing Color Protection Conditioner (300ml)</div>
+              <div class="rating">★★★★★ (350)</div>
+              <div class="price">₹2430<span class="original-price">₹2700</span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://moxiebeauty.in/cdn/shop/files/FFHS1.webp?v=1734962525&width=360" alt="Product" class="product-img">
+              <div class="product-title">Frizz Fighting Hair Serum (With SPF35)</div>
+              <div class="rating">★★★★★ (350)</div>
+              <div class="price">₹559 <span class="original-price">₹595</span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://moxiebeauty.in/cdn/shop/files/11_n2_2.jpg?v=1734515017&width=700" alt="Product" class="product-img">
+              <div class="product-title">The Headliner - Wax Styling Stick</div>
+              <div class="rating">★★★★★ (350)</div>
+              <div class="price">₹689 <span class="original-price">₹725</span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://fixmycurls.com/cdn/shop/files/Artboard_31_542afaad-2d88-4bb5-a7d9-9c5ac4112ac4.png?v=1748943873&width=713" alt="Product" class="product-img">
+              <div class="product-title">Fix My Curls Defining Hair Gel</div>
+              <div class="rating">★★★★★ (350)</div>
+              <div class="price">₹334<span class="original-price">₹380</span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://fixmycurls.com/cdn/shop/files/Artboard_40_6b1a687a-716a-421c-8daa-e07f8957982f.png?v=1748942912&width=713" alt="Product" class="product-img">
+              <div class="product-title">Fix My Curls Scalp & Strands Elixir Hair Oil</div>
+              <div class="rating">★★★★★ (350)</div>
+              <div class="price">₹616 <span class="original-price">₹770</span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+          <!-- Add more cards as needed -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

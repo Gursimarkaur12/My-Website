@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bellefiori loginpage </title>
+    <style>
+        .form-box{
+            background-color: white;
+            height:400px;
+            width:400px;
+            color: #5A3E36;
+            padding: 40px;
+            text-align:center;
+        }
+        .form-box h1{
+            font-size: 39px;
+        }
+        body{
+            background-color:#FBF9F7;
+            background-size: cover;
+            justify-content: center;
+            align-items: center;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+  
+    <nav>
+    <form class="form-box">
+      
+<h1> LOGIN PAGE </h1>
+<br><br>
+USER_ID &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" id="username" placeholder="user id" > <br><br>
+PASSWORD &nbsp;&nbsp; <input type="password" id="password" placeholder="password"> <br><br>
+<input type="button" value="submit" onclick="loginCheck()">
+</form>
+</nav>
+<script>
+    function loginCheck() {
+      const user = document.getElementById("username").value;
+      const pass = document.getElementById("password").value;
+
+      if (user == "user123" && pass == "bellefiori") {
+        alert("Login successful!");
+        window.location.href = "mywebsite.html"; // redirect to homepage
+      } else {
+        alert("Invalid username or password!");
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>category | makeup</title>
+     <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .x {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      position: sticky;
+      top: 120px;
+    }
+
+    .product-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      transition: 0.3s;
+      height: 100%;
+    }
+
+    .product-card:hover {
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    .product-img {
+      height: 180px;
+      object-fit: contain;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    .product-title {
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+
+    .price {
+      color: #e91e63;
+      font-weight: bold;
+    }
+
+    .original-price {
+      text-decoration: line-through;
+      color: #888;
+      font-size: 0.85rem;
+    }
+
+    .rating {
+      color: #ffc107;
+      font-size: 0.85rem;
+    }
+
+    .wishlist-icon {
+      color: #ff4081;
+      float: right;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .filter-sidebar {
+        position: static;
+        top: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+    <div class="container-fluid mt-4">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-md-3">
+        <div class="x">
+          <h5>Filters</h5>
+          <hr>
+          <div>
+            <strong>Price</strong>
+            <div><input type="checkbox"> Under ₹500</div>
+            <div><input type="checkbox"> ₹500 - ₹1000</div>
+            <div><input type="checkbox"> Above ₹1000</div>
+          </div>
+          <hr>
+          <div>
+            <strong>Rating</strong>
+            <div><input type="checkbox"> 4★ & above</div>
+            <div><input type="checkbox"> 3★ & above</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="col-md-9">
+        <div class="row g-3">
+          <!-- Product Card -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/7/a/7a08940LOREA00000663_1.jpg" alt="Product" class="product-img">
+              <div class="product-title">L'Oréal Paris Serum</div>
+              <div class="rating">★★★★☆ (120)</div>
+              <div class="price">₹799 <span class="original-price">₹999</span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+
+          <!-- Repeat product cards -->
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/6/9/69b3fc86902395841562_1.jpg" alt="Product" class="product-img">
+              <div class="product-title">Maybelline Matte Lipstick</div>
+              <div class="rating">★★★★★ (350)</div>
+              <div class="price">₹499 <span class="original-price">₹599</span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+<div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/resize-w:494/1157775/HWZzPH7uhk-1157775-1.jpg" alt="Product" class="product-img">
+              <div class="product-title">TIRTIR Mask Fit Makeup Fixer</div>
+              <div class="rating">★★★★★ (350)</div>
+              <div class="price">₹1080 <span class="original-price">₹2080</span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/resize-w:1080/1172359/3uWquR-LH0-1172359-1.jpg" alt="Product" class="product-img">
+              <div class="product-title">Laneige Glaze Craze Tinted Lip Serum - Peach Glaze (12 g)</div>
+              <div class="rating">★★★★★ (450)</div>
+              <div class="price">₹800 <span class="original-price">₹1150</span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://cdn.tirabeauty.com/v2/billowing-snowflake-434234/tira-p/wrkr/products/pictures/item/free/resize-w:494/1091979/qpNcoiU3CNR-1091979-1.jpg" alt="Product" class="product-img">
+              <div class="product-title">Benefit Cosmetics Benetint Lip & Cheek Stain - Rose (6ml)</div>
+              <div class="rating">★★★★★ (350)</div>
+              <div class="price">₹1870<span class="original-price">₹2450</span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/0/3/03282c9CHAAA00001244_1.jpg" alt="Product" class="product-img">
+              <div class="product-title">Charlotte Tilbury Unreal Blush Stick - Rosy Glow(9g)</div>
+              <div class="rating">★★★★★ (350)</div>
+              <div class="price">₹4250 <span class="original-price"></span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/6/f/6f7b8433145891588200_1.jpg" alt="Product" class="product-img">
+              <div class="product-title">CHANEL LES BEIGES WATER-FRESH TINT WATER-FRESH TINT FOUNDATION - MEDIUM LIGHT (30ml)</div>
+              <div class="rating">★★★★★ (350)</div>
+              <div class="price">₹6550 <span class="original-price"></span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/6/8/68d0840URBAP00000005_1.jpg" alt="Product" class="product-img">
+              <div class="product-title">Urban Decay 24/7 Moondust Glitter Eyeshadow Singles - Space Cowboy (1.8g)</div>
+              <div class="rating">★★★★★ (350)</div>
+              <div class="price">₹2000<span class="original-price">₹2500</span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4 col-lg-3">
+            <div class="product-card">
+              <img src="https://images-static.nykaa.com/media/catalog/product/tr:w-220,h-220,cm-pad_resize/e/4/e4f728b3614274226522_1.jpg" alt="Product" class="product-img">
+              <div class="product-title">Yves Saint Laurent The Inks Vinyl Cream Liquid Lipstick - 622 Plum Liberation(5.5ml)</div>
+              <div class="rating">★★★★★ (350)</div>
+              <div class="price">₹4000 <span class="original-price"></span></div>
+              <i class="fas fa-heart wishlist-icon"></i>
+            </div>
+          </div>
+          <!-- Add more cards as needed -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
